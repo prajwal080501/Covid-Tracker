@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 
 function App() {
   const [countries, setCountries] = useState([]);
+  const [country, setCountry] = useState("worldwide");
   useEffect(() => {
     const getCountriesData = async () => {
       await fetch("https://disease.sh/v3/covid-19/countries") //fetching data from the api
@@ -24,9 +25,13 @@ function App() {
     getCountriesData(); //calling the function
   }, []);
 
+  const onCountryChange = async (e) => {
+    const countryCode = e.target.value;
+    console.log(countryCode);
+  }
   return (
     <div className="App">
-      <Header countries={countries} setCountries={setCountries} />
+      <Header onCountryChange = {onCountryChange} country={country} setCountry={setCountry} countries={countries} setCountries={setCountries} />
     </div>
   );
 }

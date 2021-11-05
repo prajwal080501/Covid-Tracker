@@ -4,4 +4,15 @@
     margin-bottom: 20px;
     justify-content: space-between;
   }
+
+  .brand{
+    font-size: 1.5rem;
+    margin: 10px;
+    font-weight: 700; 
+    font-family: 'Caveat', cursive;
+
+
+  }
+
+
   
