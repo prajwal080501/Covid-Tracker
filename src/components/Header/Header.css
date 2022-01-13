@@ -3,6 +3,7 @@
     align-items: center;
     margin-bottom: 20px;
     justify-content: space-between;
+    
   }
 
   .brand{
@@ -12,6 +13,17 @@
     font-family: 'Caveat', cursive;
 
 
+  }
+
+  @media screen and (max-width:960px){
+    .brand{
+      font-size: 1rem;
+    }
+
+    .app__dropdown{
+      margin-right: 19%;
+      width: 40%;
+    }
   }
 
 

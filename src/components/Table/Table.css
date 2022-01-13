@@ -1,0 +1,38 @@
+.table{
+    margin-top: 20px;
+    overflow: scroll;
+    height: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #6a5d5d;
+}
+
+.table tr:nth-of-type(odd){
+    background-color: #f3f2f2;
+}
+
+.table tr{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    transition: all 0.5s linear;
+
+}
+.table tr:hover{
+    transition: all 0.5s linear;
+    transform: scale(1.02);
+    background-color: #e78383;
+    color: white;
+}
+
+.table td{
+    padding: 0.5rem;
+}
+
+
+
+@media screen and (max-width: 960px){
+    
+}
+
